@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1255">
+<TITLE>Java script test</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+
+<SCRIPT LANGUAGE=JavaScript>
+
+function alerttest() {
+	alert('Got here');
+}
+
+
+</SCRIPT>
+</HEAD>
+<BODY>
+
+<FORM NAME=form1>
+<SELECT NAME=theDay SIZE=5>
+   <OPTION VALUE=0 SELECTED>Monday
+   <OPTION VALUE=1>Tuesday
+   <OPTION VALUE=2>Wednesday
+
+   <OPTION VALUE=3>Thursday
+   <OPTION VALUE=4>Friday
+   <OPTION VALUE=5>Saturday
+   <OPTION VALUE=6>Sunday
+</SELECT>
+<BR>
+<INPUT TYPE="button" VALUE="Remove Wednesday" NAME=butRemoveWed
+   onclick="butRemoveWed_onclick()">
+<INPUT TYPE="button" VALUE="Add Wednesday" NAME=butAddWed 
+   onclick="butAddWed_onclick()">
+<INPUT TYPE=button VALUE="Alert test" onclick=alerttest()>
+<BR>
+</FORM>
+</BODY>
+</HTML>
