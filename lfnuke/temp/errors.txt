@@ -1,0 +1,19 @@
+problems with the site
+
+<1> in "add/game.php"
+<a>
+if ($_POST['game_desc']="") //חסר תיאור המשחק
+   {header("location: ../php/index.php?error=202");exit;};
+   
+the check is'nt working
+
+<b>
+the checking needed to be more 
+
+<2> in "includes/uploadNcheck"
+
+if (!($file_type =="image/jpeg" OR $file_type=="image/gif")) // סוג הקובץ שגוי 
+   {header('Location: ../php/index.php?error=102');};
+   
+the check is'nt working
+png type need to be added
